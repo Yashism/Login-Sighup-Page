@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" id="random"  onclick="signup()">Log In</button>
+                <button type="button" class="toggle-btn" id="random1" onclick="login()">Sign Up</button>
+            </div>
+            <div class="icon">
+                <img src="facebook.webp">
+                <img src="twitter.webp">
+                <img src="instagram.jpg">
+                <img src="google plus.jpg">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="password" class="input-field" placeholder="Conform Password" required>
+                <input type="date" class="input-field" placeholder="Enter DOB" required>
+                <input type="email" class="input-field" placeholder="Enter Your E-mail" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions.</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("signup");
+        var a=document.getElementById("random");
+        var b=document.getElementById("random1");
+        var z=document.getElementById("btn");
+
+        function login()
+        {
+            x.style.left="-400px"
+            y.style.left="50px"
+            z.style.left="110"
+            a.style.background="grey"
+            b.style.background="blue"
+            a.style.color="black"
+            b.style.color="white"
+        }
+        function signup()
+        {
+            x.style.left="50px"
+            y.style.left="450px"
+            z.style.left="0"
+            b.style.background="grey"
+            a.style.background="blue"
+            b.style.color="black" 
+            a.style.color="white"
+        }       
+    </script>
+</body>
+</html> 
